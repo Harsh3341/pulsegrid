@@ -1,4 +1,5 @@
 using PulseGrid.Core;
+using PulseGrid.Specifications;
 using Xunit;
 
 namespace PulseGrid.Tests.Unit;
@@ -17,5 +18,12 @@ public class ModelTests
     public void IncompleteExecutionCannotPass() =>
         Assert.Throws<ArgumentException>(() => new Execution(Guid.NewGuid(), DateTimeOffset.UtcNow, DateTimeOffset.UtcNow, ExecutionStatus.Passed, false));
 
+    [Fact]
+    public void ManifestRejectsUnsupportedSchema() =>
+        Assert.Throws<InvalidDataException>(() => ManifestCodec.Deserialize("""{"schemaVersion":"2.0.0"}"""u8));
+
+    [Fact]
+    public void ManifestRejectsMissingRequiredFields() =>
+        Assert.Throws<InvalidDataException>(() => ManifestCodec.Deserialize("""{"schemaVersion":"1.0.0"}"""u8));
 }
 

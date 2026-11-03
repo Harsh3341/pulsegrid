@@ -4,6 +4,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PulseGrid.Core", "src\Core\PulseGrid.Core.csproj", "{BCB67F8F-4F69-4AD3-A87A-FEAE3E9C7FA5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PulseGrid.Specifications", "src\Specifications\PulseGrid.Specifications.csproj", "{207912F6-7689-48A0-8738-FE739522A288}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PulseGrid.Tests.Unit", "tests\Unit\PulseGrid.Tests.Unit.csproj", "{2D715AB4-A9E7-43E8-A420-8CDB55A56732}"
 EndProject
 Global
@@ -16,6 +18,10 @@ Global
     {BCB67F8F-4F69-4AD3-A87A-FEAE3E9C7FA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
     {BCB67F8F-4F69-4AD3-A87A-FEAE3E9C7FA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
     {BCB67F8F-4F69-4AD3-A87A-FEAE3E9C7FA5}.Release|Any CPU.Build.0 = Release|Any CPU
+    {207912F6-7689-48A0-8738-FE739522A288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+    {207912F6-7689-48A0-8738-FE739522A288}.Debug|Any CPU.Build.0 = Debug|Any CPU
+    {207912F6-7689-48A0-8738-FE739522A288}.Release|Any CPU.ActiveCfg = Release|Any CPU
+    {207912F6-7689-48A0-8738-FE739522A288}.Release|Any CPU.Build.0 = Release|Any CPU
     {2D715AB4-A9E7-43E8-A420-8CDB55A56732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
     {2D715AB4-A9E7-43E8-A420-8CDB55A56732}.Debug|Any CPU.Build.0 = Debug|Any CPU
     {2D715AB4-A9E7-43E8-A420-8CDB55A56732}.Release|Any CPU.ActiveCfg = Release|Any CPU
