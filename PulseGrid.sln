@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PulseGrid.Core", "src\Core\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PulseGrid.Specifications", "src\Specifications\PulseGrid.Specifications.csproj", "{207912F6-7689-48A0-8738-FE739522A288}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PulseGrid.Abstractions", "src\Abstractions\PulseGrid.Abstractions.csproj", "{5C35DA6C-A8BD-4416-8726-BC08E14C10C2}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PulseGrid.Tests.Unit", "tests\Unit\PulseGrid.Tests.Unit.csproj", "{2D715AB4-A9E7-43E8-A420-8CDB55A56732}"
 EndProject
 Global
@@ -22,6 +24,10 @@ Global
     {207912F6-7689-48A0-8738-FE739522A288}.Debug|Any CPU.Build.0 = Debug|Any CPU
     {207912F6-7689-48A0-8738-FE739522A288}.Release|Any CPU.ActiveCfg = Release|Any CPU
     {207912F6-7689-48A0-8738-FE739522A288}.Release|Any CPU.Build.0 = Release|Any CPU
+    {5C35DA6C-A8BD-4416-8726-BC08E14C10C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+    {5C35DA6C-A8BD-4416-8726-BC08E14C10C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+    {5C35DA6C-A8BD-4416-8726-BC08E14C10C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+    {5C35DA6C-A8BD-4416-8726-BC08E14C10C2}.Release|Any CPU.Build.0 = Release|Any CPU
     {2D715AB4-A9E7-43E8-A420-8CDB55A56732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
     {2D715AB4-A9E7-43E8-A420-8CDB55A56732}.Debug|Any CPU.Build.0 = Debug|Any CPU
     {2D715AB4-A9E7-43E8-A420-8CDB55A56732}.Release|Any CPU.ActiveCfg = Release|Any CPU

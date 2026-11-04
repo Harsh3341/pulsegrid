@@ -1,0 +1,3 @@
+<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><PackageId>PulseGrid.Abstractions</PackageId><Description>PulseGrid Abstractions module.</Description><PackageReadmeFile>README.md</PackageReadmeFile></PropertyGroup><ItemGroup><ProjectReference Include="../Core/PulseGrid.Core.csproj" />
+<ProjectReference Include="../Specifications/PulseGrid.Specifications.csproj" /><None Include="README.md" Pack="true" PackagePath="/" /></ItemGroup></Project>
+
