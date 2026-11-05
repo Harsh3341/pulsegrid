@@ -1,4 +1,4 @@
 <Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><IsTestProject>true</IsTestProject><IsPackable>false</IsPackable></PropertyGroup><ItemGroup><Compile Include="../Fixtures/*.cs" /><ProjectReference Include="../../src/Core/PulseGrid.Core.csproj" />
 <ProjectReference Include="../../src/Specifications/PulseGrid.Specifications.csproj" /><None Include="../../specifications/examples/evidence-manifest.json" Link="evidence-manifest.json" CopyToOutputDirectory="PreserveNewest" />
-<PackageReference Include="Microsoft.NET.Test.Sdk" /><PackageReference Include="xunit" /><PackageReference Include="xunit.runner.visualstudio" PrivateAssets="all" /></ItemGroup></Project>
+<ProjectReference Include="../../adapters/Xunit/PulseGrid.Evidence.Xunit.csproj" /><PackageReference Include="Microsoft.NET.Test.Sdk" /><PackageReference Include="xunit" /><PackageReference Include="xunit.runner.visualstudio" PrivateAssets="all" /></ItemGroup></Project>
 

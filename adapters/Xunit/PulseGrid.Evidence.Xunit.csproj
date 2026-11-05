@@ -1,0 +1,3 @@
+<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><PackageId>PulseGrid.Evidence.Xunit</PackageId><Description>PulseGrid Evidence Xunit module.</Description><PackageReadmeFile>README.md</PackageReadmeFile></PropertyGroup><ItemGroup><ProjectReference Include="../../src/Core/PulseGrid.Core.csproj" />
+<ProjectReference Include="../../src/Abstractions/PulseGrid.Abstractions.csproj" /><None Include="README.md" Pack="true" PackagePath="/" /></ItemGroup></Project>
+
