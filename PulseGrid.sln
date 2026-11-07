@@ -10,7 +10,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PulseGrid.Abstractions", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PulseGrid.Evidence.Xunit", "adapters\Xunit\PulseGrid.Evidence.Xunit.csproj", "{637751FC-7E27-4C12-B23E-B110B166FB7D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PulseGrid.Evidence", "src\Evidence\PulseGrid.Evidence.csproj", "{AD08BDB6-5503-45AC-9E85-DBDB11930280}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PulseGrid.Evidence.Storage.Local", "src\Evidence\Storage.Local\PulseGrid.Evidence.Storage.Local.csproj", "{4C7933D7-99A1-44F7-A1AC-0EE19DC2129F}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PulseGrid.Tests.Unit", "tests\Unit\PulseGrid.Tests.Unit.csproj", "{2D715AB4-A9E7-43E8-A420-8CDB55A56732}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PulseGrid.Tests.Integration", "tests\Integration\PulseGrid.Tests.Integration.csproj", "{41C0AD02-8311-45FB-B93E-061A653A7195}"
 EndProject
 Global
   GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,9 +40,21 @@ Global
     {637751FC-7E27-4C12-B23E-B110B166FB7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
     {637751FC-7E27-4C12-B23E-B110B166FB7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
     {637751FC-7E27-4C12-B23E-B110B166FB7D}.Release|Any CPU.Build.0 = Release|Any CPU
+    {AD08BDB6-5503-45AC-9E85-DBDB11930280}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+    {AD08BDB6-5503-45AC-9E85-DBDB11930280}.Debug|Any CPU.Build.0 = Debug|Any CPU
+    {AD08BDB6-5503-45AC-9E85-DBDB11930280}.Release|Any CPU.ActiveCfg = Release|Any CPU
+    {AD08BDB6-5503-45AC-9E85-DBDB11930280}.Release|Any CPU.Build.0 = Release|Any CPU
+    {4C7933D7-99A1-44F7-A1AC-0EE19DC2129F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+    {4C7933D7-99A1-44F7-A1AC-0EE19DC2129F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+    {4C7933D7-99A1-44F7-A1AC-0EE19DC2129F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+    {4C7933D7-99A1-44F7-A1AC-0EE19DC2129F}.Release|Any CPU.Build.0 = Release|Any CPU
     {2D715AB4-A9E7-43E8-A420-8CDB55A56732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
     {2D715AB4-A9E7-43E8-A420-8CDB55A56732}.Debug|Any CPU.Build.0 = Debug|Any CPU
     {2D715AB4-A9E7-43E8-A420-8CDB55A56732}.Release|Any CPU.ActiveCfg = Release|Any CPU
     {2D715AB4-A9E7-43E8-A420-8CDB55A56732}.Release|Any CPU.Build.0 = Release|Any CPU
+    {41C0AD02-8311-45FB-B93E-061A653A7195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+    {41C0AD02-8311-45FB-B93E-061A653A7195}.Debug|Any CPU.Build.0 = Debug|Any CPU
+    {41C0AD02-8311-45FB-B93E-061A653A7195}.Release|Any CPU.ActiveCfg = Release|Any CPU
+    {41C0AD02-8311-45FB-B93E-061A653A7195}.Release|Any CPU.Build.0 = Release|Any CPU
   EndGlobalSection
 EndGlobal

@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><PackageId>PulseGrid.Evidence.Storage.Local</PackageId><Description>PulseGrid Evidence Storage Local module.</Description><PackageReadmeFile>README.md</PackageReadmeFile></PropertyGroup><ItemGroup><ProjectReference Include="../../Core/PulseGrid.Core.csproj" />
+<ProjectReference Include="../../Specifications/PulseGrid.Specifications.csproj" />
+<ProjectReference Include="../../Abstractions/PulseGrid.Abstractions.csproj" /><None Include="README.md" Pack="true" PackagePath="/" /></ItemGroup></Project>
+
