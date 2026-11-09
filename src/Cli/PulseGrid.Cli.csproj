@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><PackageId>PulseGrid.Cli</PackageId><Description>PulseGrid Cli module.</Description><PackageReadmeFile>README.md</PackageReadmeFile><OutputType>Exe</OutputType><PackAsTool>true</PackAsTool><ToolCommandName>pulsegrid</ToolCommandName></PropertyGroup><ItemGroup><ProjectReference Include="../Evidence/PulseGrid.Evidence.csproj" />
+<ProjectReference Include="../Evidence/Storage.Local/PulseGrid.Evidence.Storage.Local.csproj" />
+<ProjectReference Include="../../adapters/Xunit/PulseGrid.Evidence.Xunit.csproj" /><None Include="README.md" Pack="true" PackagePath="/" /></ItemGroup></Project>
+
