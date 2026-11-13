@@ -1,0 +1,28 @@
+name: CI
+on:
+  push:
+    branches: [development]
+  pull_request:
+    branches: [development]
+permissions:
+  contents: read
+jobs:
+  build-test:
+    name: build-test (${{ matrix.os }})
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+      - run: dotnet restore PulseGrid.sln --configfile NuGet.Config
+      - run: dotnet build PulseGrid.sln -c Release --no-restore
+      - run: dotnet test PulseGrid.sln -c Release --no-build --logger trx --results-directory artifacts/test-results
+      - name: Capture a real failed xUnit run
+        shell: pwsh
+        run: ./eng/verify-sample.ps1
+      - run: dotnet pack PulseGrid.sln -c Release --no-build --output artifacts/packages

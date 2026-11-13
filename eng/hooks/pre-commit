@@ -1,0 +1,16 @@
+#!/bin/sh
+set -eu
+branch=$(git symbolic-ref --short HEAD)
+[ "$branch" = "development" ] || exit 0
+if git diff --cached --name-only | grep -Eq '\.(cs|csproj|props|targets|sln|json|yml|ps1)$'; then
+    if ! git diff --quiet -- '*.cs' '*.csproj' '*.props' '*.targets' '*.sln' '*.json' '*.yml' '*.ps1'; then
+        echo "Stage all code and build configuration changes before verification." >&2
+        exit 1
+    fi
+    if git ls-files --others --exclude-standard | grep -Eq '\.(cs|csproj|props|targets|sln|json|yml|ps1)$'; then
+        echo "Stage new code and build configuration files before verification." >&2
+        exit 1
+    fi
+    dotnet build PulseGrid.sln -c Release --no-restore
+    dotnet test PulseGrid.sln -c Release --no-build
+fi
