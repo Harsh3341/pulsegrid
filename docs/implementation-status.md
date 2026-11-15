@@ -4,7 +4,7 @@ Updated: 15 November 2026.
 
 ## Milestone 0 foundation
 
-Repository and development branch initialized; architecture decisions, versioned schema, coding conventions, central packages, contribution/security guidance and Windows/Linux CI configuration are present. Seven production projects contain working behavior. Hosted CI and server branch protection require remote publication and repository administrator access.
+Repository and development branch initialized; architecture decisions, versioned schema, coding conventions, central packages, contribution/security guidance and Windows/Linux CI are present. Seven production projects contain working behavior. The public repository uses `development` as its default branch with required Windows/Linux checks, one approving review, resolved review threads, linear history and blocked force pushes/deletion.
 
 ## Milestone 1 — Evidence MVP
 
@@ -18,7 +18,7 @@ The integration suite covers filesystem round trips, portable copies without ori
 
 One report per bundle; combining independent runs is deferred. The adapter targets xUnit using VSTest TRX, not native xUnit XML or Microsoft.Testing.Platform. Capture never runs a command. Logs, traces and arbitrary artifacts are not captured; diagnostic text and display parameters are excluded. Stable identifiers and explicit metadata still require review before sharing.
 
-Unsigned hashes demonstrate internal consistency, not producer trust. Retention is manual. Windows permissions inherit destination ACLs; Unix outputs are owner-only. Atomic rename protects readers from interrupted publication; sudden process termination may leave a hidden temporary file. Hosted CI has not been observed yet. Cross-machine portability is tested by moving a bundle and removing the originating path; Windows/Linux behavior is configured in CI.
+Unsigned hashes demonstrate internal consistency, not producer trust. Retention is manual. Windows permissions inherit destination ACLs; Unix outputs are owner-only. Atomic rename protects readers from interrupted publication; sudden process termination may leave a hidden temporary file. [Hosted Windows/Linux CI has passed](https://github.com/Harsh3341/pulsegrid/actions/runs/43714771262). Cross-machine portability is tested by moving a bundle and removing the originating path; CI exercises both operating systems.
 
 ## Next milestone
 

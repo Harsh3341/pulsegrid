@@ -1,6 +1,6 @@
 # PulseGrid repository guidance
 
-Read PULSEGRID_SPEC.md and docs/implementation-status.md before changing behavior. The specification is the product and architecture baseline.
+Read docs/implementation-status.md and docs/architecture/0001-evidence-mvp.md before changing behavior. They document the public implementation scope and accepted architecture. Maintainer checkouts may also contain a private product plan; it is locally excluded and must not be committed or required by public contributor workflows.
 
 - Primary stack: .NET 10 LTS, C# 14. Build with the SDK selected by global.json.
 - Work incrementally against section 17. Current scope: Milestone 1, Evidence MVP.
