@@ -1,6 +1,6 @@
 # ADR 0001: Local-first Evidence MVP
 
-Status: Accepted. Implements PULSEGRID_SPEC.md sections 6–9 and Milestone 1.
+Status: Accepted. Defines the architecture for Milestone 1 — Evidence MVP.
 
 ## Decision
 

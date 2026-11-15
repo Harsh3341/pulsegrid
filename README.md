@@ -1,8 +1,21 @@
 # PulseGrid
 
+[![CI](https://github.com/Harsh3341/pulsegrid/actions/workflows/ci.yml/badge.svg?branch=development)](https://github.com/Harsh3341/pulsegrid/actions/workflows/ci.yml)
+[![.NET 10](https://img.shields.io/badge/.NET-10-512BD4)](https://dotnet.microsoft.com/download/dotnet/10.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 Engineering intelligence for software teams. PulseGrid captures execution evidence locally in portable, validated bundles.
 
-This repository implements **Milestone 1 — Evidence MVP**, using .NET 10 LTS / C# 14. The product baseline is [PULSEGRID_SPEC.md](PULSEGRID_SPEC.md). See [implementation status](docs/implementation-status.md) and [architecture decisions](docs/architecture/0001-evidence-mvp.md).
+This repository implements **Milestone 1 — Evidence MVP**, using .NET 10 LTS / C# 14. It is an early development project; packages are built locally and have not been published. See [implementation status](docs/implementation-status.md) and [architecture decisions](docs/architecture/0001-evidence-mvp.md).
+
+## What you can do today
+
+- Capture an existing xUnit TRX report as sanitized execution evidence.
+- Inspect test outcomes through human-readable or JSON CLI output.
+- Validate versioned schemas, ZIP entry paths and SHA-256 integrity hashes.
+- Import, export and move bundles without retaining the original report.
+
+The [failed xUnit sample](samples/FailedTests/README.md) walks through capture, inspection and validation using a real failing test.
 
 ## Build and test
 
@@ -46,3 +59,11 @@ The [failed xUnit sample](samples/FailedTests/README.md) is an executable first-
 No server, database, hosted account or AI provider is required. Raw TRX, diagnostic messages, stack traces, test output and parameterized display names are excluded. Inspect retained identifiers before sharing evidence. Hash validation detects modifications relative to the bundle's recorded digests; it does not authenticate the producer.
 
 Read the [bundle guide](docs/guides/evidence-bundles.md), [security policy](SECURITY.md), [contribution guide](CONTRIBUTING.md) and [branch checks](docs/contributors/branch-protection.md).
+
+## Contributing and support
+
+Use [issues](https://github.com/Harsh3341/pulsegrid/issues) for reproducible bugs, feature proposals and usage questions. Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request; changes target `development` and require both CI checks. Independent review is encouraged when another contributor is available.
+
+Report vulnerabilities through [private security reporting](https://github.com/Harsh3341/pulsegrid/security/advisories/new). Keep credentials, raw reports and private execution evidence out of public issues.
+
+PulseGrid is [MIT licensed](LICENSE).

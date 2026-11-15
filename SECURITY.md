@@ -2,7 +2,7 @@
 
 PulseGrid 0.1.0 is a pre-release Evidence MVP. Security updates target the development branch; no stable support window exists yet.
 
-Report vulnerabilities privately through this repository's GitHub Security Advisories when enabled. Do not post credentials or private execution evidence in public issues. If private reporting is unavailable, request a private disclosure channel without publishing exploit details.
+Report vulnerabilities through [GitHub private vulnerability reporting](https://github.com/Harsh3341/pulsegrid/security/advisories/new). Include the affected revision, impact and minimal sanitized reproduction. Do not post credentials or private execution evidence in public issues. If private reporting is unavailable, request a private disclosure channel without publishing exploit details.
 
 Capture excludes raw reports, test parameters, failure text, stack traces and output. It does not collect environment variables, source files or credentials, and does not execute tests or upload evidence. Retained stable identifiers and explicitly supplied revision/branch values still require review before sharing.
 

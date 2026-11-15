@@ -1,0 +1,33 @@
+name: Feature proposal
+description: Describe a use case and a focused improvement.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Read the implementation status and architecture decision before proposing changes.
+        PulseGrid grows incrementally; explain how the proposal fits the current scope or a documented next milestone.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: Describe who needs this and what their current workflow cannot accomplish.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Give a concrete example of the input and expected result.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and tradeoffs
+      description: Include dependency, privacy, compatibility or architecture implications when relevant.
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and validation
+      description: Explain which module or milestone is affected and how success could be tested.

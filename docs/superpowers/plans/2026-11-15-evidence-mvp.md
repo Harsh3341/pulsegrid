@@ -3,9 +3,7 @@
 **Goal:** Implement roadmap Milestone 1 and the foundation required to build it.
 **Architecture:** Local-first modular application with inward project dependencies. ZIP bundles carry versioned JSON and SHA-256 content references. An adapter ingests explicitly selected xUnit TRX results without executing commands.
 **Tech stack:** .NET 10 LTS / C# 14, System.Text.Json, System.IO.Compression, System.Xml, xUnit for tests.
-**Spec:** [PULSEGRID_SPEC.md](../../../PULSEGRID_SPEC.md), especially sections 5–9, 14–17.
-
-The user authorized proposing this plan and then implementing it in this session. Git was subsequently initialized on the requested development branch, with focused commits and origin https://github.com/Harsh3341/pulsegrid.git. Plain commit messages describe changes without attribution.
+**Public scope:** [Evidence MVP architecture](../../architecture/0001-evidence-mvp.md) and [implementation status](../../implementation-status.md).
 
 ## Constraints
 
@@ -24,4 +22,4 @@ The user authorized proposing this plan and then implementing it in this session
 
 ## Verification
 
-For each behavior: write the test, observe missing behavior fail, implement, run affected tests. After the milestone run `dotnet build PulseGrid.sln -c Release --no-restore`, `dotnet test PulseGrid.sln -c Release --no-build`, and `dotnet pack PulseGrid.sln -c Release --no-build`. CI repeats these on Windows and Linux. Validate the example and a real failed xUnit TRX capture. Hosted CI status is only known after publication.
+For each behavior: write the test, observe missing behavior fail, implement, run affected tests. After the milestone run `dotnet build PulseGrid.sln -c Release --no-restore`, `dotnet test PulseGrid.sln -c Release --no-build`, and `dotnet pack PulseGrid.sln -c Release --no-build`. CI repeats these on Windows and Linux. Validate the example and a real failed xUnit TRX capture. Observed results are recorded in implementation status.
