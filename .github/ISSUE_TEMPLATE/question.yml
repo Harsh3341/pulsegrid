@@ -1,0 +1,22 @@
+name: Usage question
+description: Ask about a documented PulseGrid workflow.
+labels: [question]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Check README.md and docs/guides/evidence-bundles.md first. Keep private reports, credentials and execution evidence out of your question.
+  - type: textarea
+    id: goal
+    attributes:
+      label: What are you trying to do?
+      description: Describe the workflow and the point where you need help.
+    validations:
+      required: true
+  - type: textarea
+    id: attempted
+    attributes:
+      label: What have you tried?
+      description: Include your PulseGrid revision, OS, SDK version and sanitized commands when relevant.
+    validations:
+      required: true

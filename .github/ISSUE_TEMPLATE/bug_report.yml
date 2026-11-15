@@ -1,0 +1,55 @@
+name: Bug report
+description: Report a reproducible problem with PulseGrid.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Report security vulnerabilities privately at https://github.com/Harsh3341/pulsegrid/security/advisories/new.
+        Share sanitized examples only. Do not attach credentials, private bundles, raw TRX reports or diagnostic text containing private data.
+  - type: input
+    id: revision
+    attributes:
+      label: PulseGrid version or commit
+      description: Use the CLI version and Git revision when available.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Operating system and .NET SDK
+      description: Include OS version and the output of dotnet --version.
+    validations:
+      required: true
+  - type: dropdown
+    id: component
+    attributes:
+      label: Affected component
+      options:
+        - CLI
+        - xUnit TRX capture
+        - Bundle validation or local storage
+        - Domain models or schemas
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Include exact commands and a minimal sanitized example. Use synthetic test identifiers.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Include the exit code and sanitized CLI output if relevant.
+    validations:
+      required: true
