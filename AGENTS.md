@@ -3,7 +3,7 @@
 Read docs/implementation-status.md and docs/architecture/0001-evidence-mvp.md before changing behavior. They document the public implementation scope and accepted architecture. Maintainer checkouts may also contain a private product plan; it is locally excluded and must not be committed or required by public contributor workflows.
 
 - Primary stack: .NET 10 LTS, C# 14. Build with the SDK selected by global.json.
-- Work incrementally against section 17. Current scope: Milestone 1, Evidence MVP.
+- Work incrementally against the milestones in docs/implementation-status.md. Current scope: Milestone 1, Evidence MVP.
 - Dependencies point inward: Core has no project dependencies; Specifications depends on Core; Abstractions depends on Core and Specifications; Evidence depends on these contracts; adapters and storage implement contracts; CLI composes modules.
 - Keep environments, verification, remote storage, server, dashboard and MCP out of this milestone.
 - Create projects only for working functionality. Do not add speculative interfaces or empty modules.

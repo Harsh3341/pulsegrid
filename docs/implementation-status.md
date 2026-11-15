@@ -4,7 +4,7 @@ Updated: 15 November 2026.
 
 ## Milestone 0 foundation
 
-Repository and development branch initialized; architecture decisions, versioned schema, coding conventions, central packages, contribution/security guidance and Windows/Linux CI are present. Seven production projects contain working behavior. The public repository uses `development` as its default branch with required Windows/Linux checks, one approving review, resolved review threads, linear history and blocked force pushes/deletion.
+Repository and development branch initialized; architecture decisions, versioned schema, coding conventions, central packages, contribution/security guidance and Windows/Linux CI are present. Seven production projects contain working behavior. The public repository uses `development` as its default branch. The documented solo-maintainer ruleset requires PRs, Windows/Linux checks, resolved review threads and linear history, blocks force pushes/deletion, and sets required approvals to zero. Its checked-in configuration must also be applied in GitHub to take effect.
 
 ## Milestone 1 — Evidence MVP
 

@@ -62,7 +62,7 @@ Read the [bundle guide](docs/guides/evidence-bundles.md), [security policy](SECU
 
 ## Contributing and support
 
-Use [issues](https://github.com/Harsh3341/pulsegrid/issues) for reproducible bugs, feature proposals and usage questions. Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request; changes target `development` and require review plus both CI checks.
+Use [issues](https://github.com/Harsh3341/pulsegrid/issues) for reproducible bugs, feature proposals and usage questions. Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request; changes target `development` and require both CI checks. Independent review is encouraged when another contributor is available.
 
 Report vulnerabilities through [private security reporting](https://github.com/Harsh3341/pulsegrid/security/advisories/new). Keep credentials, raw reports and private execution evidence out of public issues.
 
